@@ -1,0 +1,41 @@
+Delete
+コメントを削除
+/comments/:id
+スレッドを削除
+/threads/:id
+いいねを削除
+/likes/:id
+
+Put
+コメントを更新
+/comments/:id
+スレッドを更新
+/threads/:id
+
+Get
+ログインしてる名前とidを返す
+/users
+スレッドを全て返す
+/threads
+スレッドを１つ返す
+/threads/:id
+
+Post
+Userをpostする
+/users
+コメントをpostする
+/comments
+スレッドをpostする
+/threads
+いいねをpostする
+/likes
+
+table情報
+users: 
+id, name, email, password
+threads: 
+id, title, description, created_date, updated_date, user_id
+comments: 
+id, comment, created_date, updated_date, user_id, thread_id
+likes: 
+id, created_date, updated_date, user_id, thread_id
